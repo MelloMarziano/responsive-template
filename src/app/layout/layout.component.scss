@@ -1,0 +1,32 @@
+.app-container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 275px 1fr;
+  grid-template-rows: 75px 1fr 60px;
+  grid-template-areas: "sidebar header"
+                        "sidebar main"
+                        "sidebar footer";
+
+
+}
+
+
+.sidebar{
+  background-color: #FFF;
+  grid-area: sidebar;
+}
+
+.footer{
+  background-color: blue;
+  grid-area: footer;
+}
+
+.main{
+  background-color: #f2f5fa;
+  grid-area: main;
+}
+
+.header{
+  background-color: aqua;
+  grid-area: header;
+}
