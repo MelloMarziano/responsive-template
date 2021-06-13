@@ -1,1 +1,25 @@
-<p>sidebar works!</p>
+<div class="sidebar-container">
+  <div class="logo-container">
+    <h4>LOGO</h4>
+  </div>
+  <div class="menu-container">
+    <div class="menu-items" >
+      <div class="menu-item" *ngFor="let item of menuItems" routerLink={{item.route}} routerLinkActive="active">
+        <i class={{item.icon}}></i> <span class="menu-text">{{item.displayName}}</span>
+      </div>
+      <div style="height: 3px; width: 100%; background-color: #f2f5fa; border-radius: 50px;"></div>
+    </div>
+    <div class="custom-container">
+      <div class="semi-circle"></div>
+      <div class="custom-div">
+        <i class="fas fa-exclamation-triangle" style="font-size: 50px;"></i>
+        <h6 style="text-align: center; margin: 20px;">
+          To configure the styles and fonts of the template, click here!
+        </h6>
+        <div class="menu-tools">
+         <span class="menu-text-tools">Settings</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

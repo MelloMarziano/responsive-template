@@ -1,0 +1,142 @@
+.sidebar-container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas: "logo-container"
+                        "menu-container";
+}
+
+.logo-container{
+  grid-area: logo-container;
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container{
+  grid-area: menu-container;
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-items{
+  height: 60%;
+  width: 100%;
+
+  padding: 20px 20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.menu-item{
+  margin-bottom: 15px;
+  padding-left: 20px;
+  height: 50px;
+  color: #000;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.menu-text{
+  color: #b1bac3;
+  margin-left: 15px;
+  font-size: 1rem;
+}
+
+.active{
+  margin-bottom: 15px;
+  background-color: #1a1a1a;
+  padding-left: 20px;
+  height: 50px;
+  color: #FFF;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 1.3rem;
+}
+
+
+.menu-item:hover{
+  cursor: pointer;
+  background-color: #f2f5fa;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .25) ;
+}
+
+.semi-circle {
+  width: 60px;
+  height: 30px;
+  background: #f2f5fa;
+  -moz-border-radius: 100px 100px 0 0;
+  -webkit-border-radius: 100px 100px 0 0;
+  border-radius: 100px 100px 0 0;
+}
+
+.custom-container{
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-div{
+  background-color: #f2f5fa;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-tools{
+  margin-bottom: 15px;
+  background-color: #FFF;
+  height: 50px;
+  color: #000;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3rem;
+}
+
+.menu-text-tools{
+  color: #b1bac3;
+  font-size: 1rem;
+}
+
+.menu-tools:hover{
+  cursor: pointer;
+  background-color: #f2f5fa;
+  border: 1px solid rgba(0, 0, 0, .25);
+}
