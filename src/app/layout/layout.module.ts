@@ -9,6 +9,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { LayoutComponent } from './layout.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ChartsModule } from 'ng2-charts';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 
@@ -18,14 +24,19 @@ import { MatDialogModule } from '@angular/material/dialog';
     MainComponent,
     HeaderComponent,
     LayoutComponent,
-    FooterComponent
+    FooterComponent,
+    BarChartComponent,
+    DoughnutChartComponent,
+    LineChartComponent
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     SharedModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    ChartsModule,
+    MatTableModule
   ]
 })
 export class LayoutModule { }
